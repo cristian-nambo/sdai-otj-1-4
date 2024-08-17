@@ -9,6 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: gainsboro;
+            line-height: 1.6; /* Set line height for readability */
         }
         header {
             background-color: #333;
@@ -22,10 +24,8 @@
             text-align: center;
         }
         nav a {
-            /* float: left; */
             display: inline-block;
             color: white;
-            text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
@@ -45,6 +45,37 @@
             width: 100%;
             bottom: 0;
         }
+
+        /* Custom Styles */
+        h1, h2, h3 {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font family */
+            color: #ff6347; /* Fun color */
+            margin-top: 20px; /*  Space before headings */
+            margin-bottom: 10px; /* Space AFTER headings */
+        }
+
+        p{
+            margin-bottom: 15px; /* Space AFTER paragraphs */
+        }
+
+        .menu-title {
+            text-align: center;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-us {
+            /* width: 300px;
+            height: 300px; */
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 20px; /*Space AFTER image */
+        }
     </style>
 </head>
 <body>
@@ -57,21 +88,26 @@
             <a href="#hours">Hours</a>
         </nav>
 
-        <div id="hero"><img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" height="777px"="chrome plated food truck serving 2 costumers"></div>
-    
+        <div id="hero">
+            <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Chrome plated food truck serving 2 customers" style="width: 50%; height: auto;">
+        </div>
+
         <h1>Dev Dish Food Truck & Restaurant</h1>
     
     </header>
 
-    <div id="about-us">
+    <section id="about-us">
         <h2>About Us</h2>
+        <div class="about-us">
+            <img src="./assets/images/pexels-edwardeyer-1247755.jpg" alt="two burgers being served by the cheff" style= "height: 200px">
+        </div>
         <p>What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.</p>
         <p>Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.</p>
         <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
-    </div>
+    </section>
 
-    <div id="menu">
-        <h2>The Dev Dish Quarterly Menu</h2>
+    <section id="menu">
+        <h2 class="menu-title">The Dev Dish Quarterly Menu</h2>
         <h3>Wraps</h3>
         <ul>
             <li>Function Fries
@@ -106,7 +142,7 @@
             </li>
             <li>Note:
                 <ul>
-                    <li>All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.</li>
+                    <li>All wraps, except Stack Overflow, are served on your choice of flour or corn tortilla.</li>
                 </ul>
             </li>
         </ul>
@@ -117,33 +153,32 @@
             <li>Golden Ratio Fries: Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</li>
             <li>Compile Chips: Tortilla chips and salsa verde</li>
         </ul>
-    </div>
+    </section>
 
-    <div id="dev-favorites">
+    <section id="dev-favorites">
         <h2>Developer's Favorites</h2>
         <p>Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for your special occasion.</p>
-    </div>
+    </section>
 
-    <div id="location">
+    <section id="location">
         <h2>Location</h2>
         <p>511 Tristin Isle Park Hudsonton, Michigan</p>
-    </div>
+    </section>
 
-    <div id="hours">
+    <section id="hours">
         <h2>Hours</h2>
         <ul>
-            <li><span style="font-weight: bold;">Monday:</span> 10am-7pm</li>
-            <li><span style="font-weight: bold;">Tuesday:</span> 10am-7pm</li>
-            <li><span style="font-weight: bold;">Wednesday:</span> 10am-7pm</li>
-            <li><span style="font-weight: bold;">Thursday:</span> 10am-10pm</li>
-            <li><span style="font-weight: bold;">Friday:</span> 10am-9pm</li>
-            <li><span style="font-weight: bold;">Saturday:</span> 12pm-11pm</li>
-            <li><span style="font-weight: bold;">Sunday:</span> 12pm-11pm</li>
+            <li><strong>Monday:</strong> 10am-7pm</li>
+            <li><strong>Tuesday:</strong> 10am-7pm</li>
+            <li><strong>Wednesday:</strong> 10am-7pm</li>
+            <li><strong>Thursday:</strong> 10am-10pm</li>
+            <li><strong>Friday:</strong> 10am-9pm</li>
+            <li><strong>Saturday:</strong> 12pm-11pm</li>
+            <li><strong>Sunday:</strong> 12pm-11pm</li>
         </ul>
-    </div>
+    </section>
 
-<!-- Wanted to make this section my actual footer, will come back to this section when we learn how to add clickable icons to the footers -->
-    <div>
+    <!-- <div>
         <h2>Footer</h2>
         <h3>Social Media Icons:</h3>
         <ul>
@@ -151,12 +186,10 @@
             <li>Twitter</li>
             <li>Instagram</li>
         </ul>
-    </div>
-    <br>
+    </div> -->
 
     <footer>
         <span>&copy; 2024 Worked extremely hard, show some love...please??</span>
     </footer>
-    <br>
 </body>
 </html>
