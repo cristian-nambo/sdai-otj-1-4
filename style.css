@@ -29,15 +29,6 @@ section {
     padding: 20px;
     margin: 10px;
 }
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 
 /* Custom Styles */
 h1, h2, h3 {
@@ -46,6 +37,22 @@ h1, h2, h3 {
     margin-top: 20px; /*  Space before headings */
     margin-bottom: 10px; /* Space AFTER headings */
 }
+
+.dev-dishes {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between images */
+    gap: 5px; /* Adds spacing between images */
+}
+
+.dev-dishes img {
+    flex: 1; /* Allows images to grow to fill space */
+    min-width: 200px; /* Minimum width for images */
+    max-width: 300px; /* Maximum width for images */
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images fill their boxes appropriately */
+}
+
 
 p{
     margin-bottom: 15px; /* Space AFTER paragraphs */
@@ -68,4 +75,40 @@ p{
     font-size: 24px;
     font-style: italic;
     margin-bottom: 20px; /*Space AFTER image */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer span {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px; /* Space between the icons */
+    justify-content: center; /* Center icons horizontally */
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    object-fit: contain;
+    transition: transform 0.3s; /*Adds a hover effect */
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
 }
